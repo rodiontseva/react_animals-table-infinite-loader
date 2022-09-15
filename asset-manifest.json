@@ -1,16 +1,12 @@
 {
   "files": {
-    "main.css": "/react_animals-table-infinite-loader/static/css/main.073c9b0a.css",
-    "main.js": "/react_animals-table-infinite-loader/static/js/main.e6f3105d.js",
-    "static/js/787.8d64ff9b.chunk.js": "/react_animals-table-infinite-loader/static/js/787.8d64ff9b.chunk.js",
-    "static/media/logo.svg": "/react_animals-table-infinite-loader/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/react_animals-table-infinite-loader/static/css/main.31d6cfe0.css",
+    "main.js": "/react_animals-table-infinite-loader/static/js/main.907bf529.js",
     "index.html": "/react_animals-table-infinite-loader/index.html",
-    "main.073c9b0a.css.map": "/react_animals-table-infinite-loader/static/css/main.073c9b0a.css.map",
-    "main.e6f3105d.js.map": "/react_animals-table-infinite-loader/static/js/main.e6f3105d.js.map",
-    "787.8d64ff9b.chunk.js.map": "/react_animals-table-infinite-loader/static/js/787.8d64ff9b.chunk.js.map"
+    "main.907bf529.js.map": "/react_animals-table-infinite-loader/static/js/main.907bf529.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.e6f3105d.js"
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.907bf529.js"
   ]
 }
