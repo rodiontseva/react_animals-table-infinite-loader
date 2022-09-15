@@ -1,1 +1,1 @@
-[DEMO](https://rodiontseva.github.io/react_animals-table-infinite-loader)
+[DEMO](https://rodiontseva.github.io/react_pets-table-infinite-loader)
