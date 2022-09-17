@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
 import React, { FC, useState } from 'react'
 import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-enterprise';
@@ -57,7 +58,7 @@ export const PetsTable: FC = () => {
 
   return (
     <div>
-      <div className="ag-theme-alpine" style={{ height: 400 }}>
+      <div className="ag-theme-alpine" style={{ height: 300 }}>
         <AgGridReact
           columnDefs={columns}
           rowModelType="infinite"
