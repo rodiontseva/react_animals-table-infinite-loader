@@ -12,13 +12,8 @@ export const App: FC = () => {
 
   return (
     <Container>
-      <PetsForm
-        setPets={setPets}
-      />
-      <PetsTable
-        pets={pets}
-        setPets={setPets}
-        />
+      <PetsForm setPets={setPets} />
+      <PetsTable/>
     </Container>
   );
 }

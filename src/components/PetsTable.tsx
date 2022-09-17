@@ -1,55 +1,72 @@
-import React, { Dispatch, FC, SetStateAction, useEffect } from 'react'
-import { getPets } from '../api/pets'
-import { Pet } from '../types/Pet'
-import { DataGrid, GridRowsProp, GridColDef } from '@mui/x-data-grid';
-import Box from '@mui/material/Box';
+import React, { FC, useState } from 'react'
+import { AgGridReact } from 'ag-grid-react';
+import 'ag-grid-enterprise';
+import 'ag-grid-community/dist/styles/ag-grid.css';
+import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 
-interface Props {
-  pets: Pet[],
-  setPets: Dispatch<SetStateAction<Pet[]>>,
-}
-export const PetsTable: FC<Props> = (props) => {
-  const { pets, setPets } = props;
-  const rows: GridRowsProp = pets.map(pet => {
-    return {
-      id: pet.id,
-      col1: pet.name,
-      col2: pet.breed,
-      col3: pet.age,
-      col4: pet.gender,
-      col5: pet.owner_name,
-      col6: pet.owner_email,
-    }
-  });
-
-  const columns: GridColDef[] = [
-    { field: 'col1', headerName: 'Pet name', width: 150 },
-    { field: 'col2', headerName: 'Breed', width: 150 },
-    { field: 'col3', headerName: 'Age', width: 150 },
-    { field: 'col4', headerName: 'Gender', width: 150 },
-    { field: 'col5', headerName: 'Owner name', width: 150 },
-    { field: 'col6', headerName: 'Owner email', width: 150 },
+export const PetsTable: FC = () => {
+  const [gridApi, setGridApi] = useState(null);
+  const columns = [
+    { headerName: 'Pet name', field: 'name', filter: 'agTextColumnFilter',cellRenderer: 'loading' },
+    { headerName: 'Breed', field: 'breed', filter: 'agTextColumnFilter' },
+    { headerName: 'Age', field: 'age', filter: 'agTextColumnFilter' },
+    { headerName: 'Gender', field: 'gender', filter: 'agTextColumnFilter' },
+    { headerName: 'Owner name', field: 'owner_name', filter: 'agTextColumnFilter' },
+    { headerName: 'Owner email', field: 'owner_email', filter: 'agTextColumnFilter' }
   ];
 
-  useEffect(() => {
-    getPets()
-      .then(setPets)
-      .catch(() => {
-        throw new Error('Unable to display pets list')
-      })
-  }, [setPets]);
+  const datasource = {
+    getRows (params) {
+      console.log(JSON.stringify(params, null, 1));
+      const { startRow, endRow, sortModel } = params;
+
+      let url = 'https://rodiontseva-pets.herokuapp.com/api/animals/all?'
+
+      if (sortModel.length > 0) {
+        const { colId, sort } = sortModel[0]
+        url += `_sort=${colId}&_order=${sort}&`
+      }
+
+      url += `_start=${startRow}&_end=${endRow}`
+      fetch(url)
+        .then(async httpResponse => await httpResponse.json())
+        .then(response => {
+          setTimeout(() => params.successCallback(response.animals, response.totalItems), 2000)
+        })
+        .catch(error => {
+          console.error(error);
+          params.failCallback();
+        })
+    }
+  };
+
+  const onGridReady = (params) => {
+    setGridApi(params);
+    params.api.setDatasource(datasource);
+  }
+  const components = {
+    loading: (params) => {
+      console.log(params.value);
+      if (params.value !== undefined) {
+        return params.value
+      } else {
+        return 'Loading ...'
+      }
+    }
+  }
 
   return (
-    <Box
-      sx={{
-        height: 500,
-        width: '100%',
-        '& .super-app-theme--header': {
-          backgroundColor: 'rgba(255, 7, 0, 0.55)',
-        },
-      }}
-    >
-      <DataGrid rows={rows} columns={columns} />
-    </Box>
+    <div>
+      <div className="ag-theme-alpine" style={{ height: 400 }}>
+        <AgGridReact
+          columnDefs={columns}
+          rowModelType="infinite"
+          onGridReady={onGridReady}
+          components={components}
+          defaultColDef={{ filter: true, floatingFilter: true, sortable: true }}
+          cacheBlockSize={10}
+        />
+      </div>
+    </div>
   );
-}
+};
