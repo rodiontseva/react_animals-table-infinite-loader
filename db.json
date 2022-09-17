@@ -1,404 +1,454 @@
 {
   "animals": [
     {
-    "id": 1,
-    "name": "Vervet monkey",
-    "breed": "Cercopithecus aethiops",
-    "age": 12,
-    "gender": "Male",
-    "owner_name": "Stevie",
-    "owner_email": "shagley0@dot.gov"
-  }, {
-    "id": 2,
-    "name": "Ant (unidentified)",
-    "breed": "unavailable",
-    "age": 8,
-    "gender": "Male",
-    "owner_name": "Chariot",
-    "owner_email": "ccasetti1@engadget.com"
-  }, {
-    "id": 3,
-    "name": "Hottentot teal",
-    "breed": "Anas punctata",
-    "age": 11,
-    "gender": "Female",
-    "owner_name": "Florence",
-    "owner_email": "fbovey2@taobao.com"
-  }, {
-    "id": 4,
-    "name": "Red phalarope",
-    "breed": "Phalaropus fulicarius",
-    "age": 4,
-    "gender": "Female",
-    "owner_name": "Ursuline",
-    "owner_email": "umastrantone3@ovh.net"
-  }, {
-    "id": 5,
-    "name": "Cat, miner's",
-    "breed": "Bassariscus astutus",
-    "age": 12,
-    "gender": "Male",
-    "owner_name": "Vite",
-    "owner_email": "vmantz4@ucoz.ru"
-  }, {
-    "id": 6,
-    "name": "Eagle, crowned",
-    "breed": "Spizaetus coronatus",
-    "age": 21,
-    "gender": "Male",
-    "owner_name": "Galvan",
-    "owner_email": "gguiu5@deliciousdays.com"
-  }, {
-    "id": 7,
-    "name": "Turtle, eastern box",
-    "breed": "Terrapene carolina",
-    "age": 1,
-    "gender": "Male",
-    "owner_name": "Edsel",
-    "owner_email": "ebarok6@feedburner.com"
-  }, {
-    "id": 8,
-    "name": "Red phalarope",
-    "breed": "Phalaropus fulicarius",
-    "age": 23,
-    "gender": "Female",
-    "owner_name": "Sissy",
-    "owner_email": "scardello7@dion.ne.jp"
-  }, {
-    "id": 9,
-    "name": "Stork, jabiru",
-    "breed": "Ephippiorhynchus mycteria",
-    "age": 14,
-    "gender": "Male",
-    "owner_name": "Corbie",
-    "owner_email": "cstreader8@techcrunch.com"
-  }, {
-    "id": 10,
-    "name": "Duck, white-faced whistling",
-    "breed": "Dendrocygna viduata",
-    "age": 15,
-    "gender": "Female",
-    "owner_name": "Idette",
-    "owner_email": "isexton9@barnesandnoble.com"
-  }, {
-    "id": 11,
-    "name": "European beaver",
-    "breed": "Castor fiber",
-    "age": 15,
-    "gender": "Male",
-    "owner_name": "Delmer",
-    "owner_email": "dmoyesa@hhs.gov"
-  }, {
-    "id": 12,
-    "name": "Toddy cat",
-    "breed": "Paradoxurus hermaphroditus",
-    "age": 17,
-    "gender": "Female",
-    "owner_name": "Guenna",
-    "owner_email": "gtabnerb@shinystat.com"
-  }, {
-    "id": 13,
-    "name": "Barbet, levaillant's",
-    "breed": "Trachyphonus vaillantii",
-    "age": 6,
-    "gender": "Female",
-    "owner_name": "Tiena",
-    "owner_email": "tkarpovc@miibeian.gov.cn"
-  }, {
-    "id": 14,
-    "name": "Denham's bustard",
-    "breed": "Neotis denhami",
-    "age": 8,
-    "gender": "Female",
-    "owner_name": "Valene",
-    "owner_email": "vrumsbyd@nifty.com"
-  }, {
-    "id": 15,
-    "name": "Gonolek, burchell's",
-    "breed": "Laniaurius atrococcineus",
-    "age": 5,
-    "gender": "Male",
-    "owner_name": "Jerome",
-    "owner_email": "jsvanettie@amazon.de"
-  }, {
-    "id": 16,
-    "name": "Weaver, lesser masked",
-    "breed": "Ploceus intermedius",
-    "age": 9,
-    "gender": "Female",
-    "owner_name": "Cassaundra",
-    "owner_email": "cwoofendenf@samsung.com"
-  }, {
-    "id": 17,
-    "name": "Common langur",
-    "breed": "Semnopithecus entellus",
-    "age": 23,
-    "gender": "Female",
-    "owner_name": "Alisa",
-    "owner_email": "aberndseng@blog.com"
-  }, {
-    "id": 18,
-    "name": "Boubou, southern",
-    "breed": "Laniarius ferrugineus",
-    "age": 9,
-    "gender": "Female",
-    "owner_name": "Bettye",
-    "owner_email": "bbullochh@ft.com"
-  }, {
-    "id": 19,
-    "name": "Crab-eating fox",
-    "breed": "Dusicyon thous",
-    "age": 21,
-    "gender": "Male",
-    "owner_name": "Damon",
-    "owner_email": "desbyi@dedecms.com"
-  }, {
-    "id": 20,
-    "name": "Heron, black-crowned night",
-    "breed": "Nycticorax nycticorax",
-    "age": 11,
-    "gender": "Female",
-    "owner_name": "Irma",
-    "owner_email": "iverdeyj@elpais.com"
-  }, {
-    "id": 21,
-    "name": "Red-tailed hawk",
-    "breed": "Buteo jamaicensis",
-    "age": 18,
-    "gender": "Female",
-    "owner_name": "Ardra",
-    "owner_email": "asothebyk@123-reg.co.uk"
-  }, {
-    "id": 22,
-    "name": "Lizard, goanna",
-    "breed": "Varanus sp.",
-    "age": 9,
-    "gender": "Male",
-    "owner_name": "Immanuel",
-    "owner_email": "iwaldenl@bravesites.com"
-  }, {
-    "id": 23,
-    "name": "Australian spiny anteater",
-    "breed": "Tachyglossus aculeatus",
-    "age": 21,
-    "gender": "Female",
-    "owner_name": "Flossie",
-    "owner_email": "frenm@vistaprint.com"
-  }, {
-    "id": 24,
-    "name": "Sheep, american bighorn",
-    "breed": "Ovis canadensis",
-    "age": 8,
-    "gender": "Male",
-    "owner_name": "El",
-    "owner_email": "ewondraschekn@storify.com"
-  }, {
-    "id": 25,
-    "name": "Rattlesnake, eastern diamondback",
-    "breed": "Crotalus adamanteus",
-    "age": 17,
-    "gender": "Male",
-    "owner_name": "Lazaro",
-    "owner_email": "ldekeysero@miitbeian.gov.cn"
-  }, {
-    "id": 26,
-    "name": "White-lipped peccary",
-    "breed": "Tayassu pecari",
-    "age": 3,
-    "gender": "Female",
-    "owner_name": "Shay",
-    "owner_email": "sstronghillp@bloglovin.com"
-  }, {
-    "id": 27,
-    "name": "Heron, yellow-crowned night",
-    "breed": "Nyctanassa violacea",
-    "age": 15,
-    "gender": "Female",
-    "owner_name": "Yasmin",
-    "owner_email": "yvillarq@sina.com.cn"
-  }, {
-    "id": 28,
-    "name": "African pied wagtail",
-    "breed": "Motacilla aguimp",
-    "age": 1,
-    "gender": "Male",
-    "owner_name": "Tonnie",
-    "owner_email": "tbisphamr@clickbank.net"
-  }, {
-    "id": 29,
-    "name": "Jaeger, long-tailed",
-    "breed": "Stercorarius longicausus",
-    "age": 4,
-    "gender": "Male",
-    "owner_name": "Hilario",
-    "owner_email": "hcaudrays@aboutads.info"
-  }, {
-    "id": 30,
-    "name": "Common mynah",
-    "breed": "Acridotheres tristis",
-    "age": 6,
-    "gender": "Female",
-    "owner_name": "Debra",
-    "owner_email": "dimlacket@godaddy.com"
-  }, {
-    "id": 31,
-    "name": "Elephant, african",
-    "breed": "Loxodonta africana",
-    "age": 1,
-    "gender": "Female",
-    "owner_name": "Cornelia",
-    "owner_email": "cruddochu@imgur.com"
-  }, {
-    "id": 32,
-    "name": "Baboon, yellow",
-    "breed": "Papio cynocephalus",
-    "age": 18,
-    "gender": "Female",
-    "owner_name": "Marylee",
-    "owner_email": "mkingscottv@godaddy.com"
-  }, {
-    "id": 33,
-    "name": "Hawk-eagle, crowned",
-    "breed": "Spizaetus coronatus",
-    "age": 15,
-    "gender": "Male",
-    "owner_name": "Ronny",
-    "owner_email": "rgoodaneww@java.com"
-  }, {
-    "id": 34,
-    "name": "Hornbill, red-billed",
-    "breed": "Tockus erythrorhyncus",
-    "age": 16,
-    "gender": "Male",
-    "owner_name": "Leupold",
-    "owner_email": "lprisex@reuters.com"
-  }, {
-    "id": 35,
-    "name": "Indian tree pie",
-    "breed": "Dendrocitta vagabunda",
-    "age": 9,
-    "gender": "Female",
-    "owner_name": "Beverly",
-    "owner_email": "bwestwatery@mtv.com"
-  }, {
-    "id": 36,
-    "name": "Goldeneye, common",
-    "breed": "Bucephala clangula",
-    "age": 20,
-    "gender": "Male",
-    "owner_name": "Durante",
-    "owner_email": "dreederz@a8.net"
-  }, {
-    "id": 37,
-    "name": "Porcupine, crested",
-    "breed": "Hystrix cristata",
-    "age": 2,
-    "gender": "Male",
-    "owner_name": "Lorry",
-    "owner_email": "lstonman10@narod.ru"
-  }, {
-    "id": 38,
-    "name": "Savannah deer",
-    "breed": "Mazama gouazoubira",
-    "age": 8,
-    "gender": "Female",
-    "owner_name": "Bird",
-    "owner_email": "bllelweln11@time.com"
-  }, {
-    "id": 39,
-    "name": "Civet, common palm",
-    "breed": "Paradoxurus hermaphroditus",
-    "age": 21,
-    "gender": "Female",
-    "owner_name": "Rorie",
-    "owner_email": "rdowers12@diigo.com"
-  }, {
-    "id": 40,
-    "name": "Penguin, galapagos",
-    "breed": "Spheniscus mendiculus",
-    "age": 12,
-    "gender": "Male",
-    "owner_name": "Hamil",
-    "owner_email": "hbenmore13@constantcontact.com"
-  }, {
-    "id": 41,
-    "name": "Cape raven",
-    "breed": "Corvus albicollis",
-    "age": 10,
-    "gender": "Female",
-    "owner_name": "Rowena",
-    "owner_email": "rmennear14@taobao.com"
-  }, {
-    "id": 42,
-    "name": "Egyptian goose",
-    "breed": "Alopochen aegyptiacus",
-    "age": 13,
-    "gender": "Female",
-    "owner_name": "Timothea",
-    "owner_email": "twigley15@sogou.com"
-  }, {
-    "id": 43,
-    "name": "Jabiru stork",
-    "breed": "Ephippiorhynchus mycteria",
-    "age": 16,
-    "gender": "Male",
-    "owner_name": "Whittaker",
-    "owner_email": "wdreus16@go.com"
-  }, {
-    "id": 44,
-    "name": "African pied wagtail",
-    "breed": "Motacilla aguimp",
-    "age": 19,
-    "gender": "Female",
-    "owner_name": "Phyllys",
-    "owner_email": "pfavel17@uol.com.br"
-  }, {
-    "id": 45,
-    "name": "Stork, openbill",
-    "breed": "Anastomus oscitans",
-    "age": 7,
-    "gender": "Female",
-    "owner_name": "Michal",
-    "owner_email": "mmelbury18@nydailynews.com"
-  }, {
-    "id": 46,
-    "name": "Land iguana",
-    "breed": "Conolophus subcristatus",
-    "age": 22,
-    "gender": "Male",
-    "owner_name": "Torrance",
-    "owner_email": "tbinney19@desdev.cn"
-  }, {
-    "id": 47,
-    "name": "Comb duck",
-    "breed": "Sarkidornis melanotos",
-    "age": 12,
-    "gender": "Male",
-    "owner_name": "Glenn",
-    "owner_email": "gacres1a@noaa.gov"
-  }, {
-    "id": 48,
-    "name": "Chameleon (unidentified)",
-    "breed": "Chamaelo sp.",
-    "age": 18,
-    "gender": "Male",
-    "owner_name": "Devlin",
-    "owner_email": "ddallosso1b@wix.com"
-  }, {
-    "id": 49,
-    "name": "Lechwe, kafue flats",
-    "breed": "Kobus leche robertsi",
-    "age": 9,
-    "gender": "Male",
-    "owner_name": "Lind",
-    "owner_email": "ljanuaryst1c@jiathis.com"
-  }, {
-    "id": 50,
-    "name": "Grey phalarope",
-    "breed": "Phalaropus fulicarius",
-    "age": 1,
-    "gender": "Female",
-    "owner_name": "Karlen",
-    "owner_email": "kdurrance1d@redcross.org"
-  }]
+      "id": 1,
+      "name": "Vervet monkey",
+      "breed": "Cercopithecus aethiops",
+      "age": 12,
+      "gender": "Male",
+      "owner_name": "Stevie",
+      "owner_email": "shagley0@dot.gov"
+    },
+    {
+      "id": 2,
+      "name": "Ant (unidentified)",
+      "breed": "unavailable",
+      "age": 8,
+      "gender": "Male",
+      "owner_name": "Chariot",
+      "owner_email": "ccasetti1@engadget.com"
+    },
+    {
+      "id": 3,
+      "name": "Hottentot teal",
+      "breed": "Anas punctata",
+      "age": 11,
+      "gender": "Female",
+      "owner_name": "Florence",
+      "owner_email": "fbovey2@taobao.com"
+    },
+    {
+      "id": 4,
+      "name": "Red phalarope",
+      "breed": "Phalaropus fulicarius",
+      "age": 4,
+      "gender": "Female",
+      "owner_name": "Ursuline",
+      "owner_email": "umastrantone3@ovh.net"
+    },
+    {
+      "id": 5,
+      "name": "Cat, miner's",
+      "breed": "Bassariscus astutus",
+      "age": 12,
+      "gender": "Male",
+      "owner_name": "Vite",
+      "owner_email": "vmantz4@ucoz.ru"
+    },
+    {
+      "id": 6,
+      "name": "Eagle, crowned",
+      "breed": "Spizaetus coronatus",
+      "age": 21,
+      "gender": "Male",
+      "owner_name": "Galvan",
+      "owner_email": "gguiu5@deliciousdays.com"
+    },
+    {
+      "id": 7,
+      "name": "Turtle, eastern box",
+      "breed": "Terrapene carolina",
+      "age": 1,
+      "gender": "Male",
+      "owner_name": "Edsel",
+      "owner_email": "ebarok6@feedburner.com"
+    },
+    {
+      "id": 8,
+      "name": "Red phalarope",
+      "breed": "Phalaropus fulicarius",
+      "age": 23,
+      "gender": "Female",
+      "owner_name": "Sissy",
+      "owner_email": "scardello7@dion.ne.jp"
+    },
+    {
+      "id": 9,
+      "name": "Stork, jabiru",
+      "breed": "Ephippiorhynchus mycteria",
+      "age": 14,
+      "gender": "Male",
+      "owner_name": "Corbie",
+      "owner_email": "cstreader8@techcrunch.com"
+    },
+    {
+      "id": 10,
+      "name": "Duck, white-faced whistling",
+      "breed": "Dendrocygna viduata",
+      "age": 15,
+      "gender": "Female",
+      "owner_name": "Idette",
+      "owner_email": "isexton9@barnesandnoble.com"
+    },
+    {
+      "id": 11,
+      "name": "European beaver",
+      "breed": "Castor fiber",
+      "age": 15,
+      "gender": "Male",
+      "owner_name": "Delmer",
+      "owner_email": "dmoyesa@hhs.gov"
+    },
+    {
+      "id": 12,
+      "name": "Toddy cat",
+      "breed": "Paradoxurus hermaphroditus",
+      "age": 17,
+      "gender": "Female",
+      "owner_name": "Guenna",
+      "owner_email": "gtabnerb@shinystat.com"
+    },
+    {
+      "id": 13,
+      "name": "Barbet, levaillant's",
+      "breed": "Trachyphonus vaillantii",
+      "age": 6,
+      "gender": "Female",
+      "owner_name": "Tiena",
+      "owner_email": "tkarpovc@miibeian.gov.cn"
+    },
+    {
+      "id": 14,
+      "name": "Denham's bustard",
+      "breed": "Neotis denhami",
+      "age": 8,
+      "gender": "Female",
+      "owner_name": "Valene",
+      "owner_email": "vrumsbyd@nifty.com"
+    },
+    {
+      "id": 15,
+      "name": "Gonolek, burchell's",
+      "breed": "Laniaurius atrococcineus",
+      "age": 5,
+      "gender": "Male",
+      "owner_name": "Jerome",
+      "owner_email": "jsvanettie@amazon.de"
+    },
+    {
+      "id": 16,
+      "name": "Weaver, lesser masked",
+      "breed": "Ploceus intermedius",
+      "age": 9,
+      "gender": "Female",
+      "owner_name": "Cassaundra",
+      "owner_email": "cwoofendenf@samsung.com"
+    },
+    {
+      "id": 17,
+      "name": "Common langur",
+      "breed": "Semnopithecus entellus",
+      "age": 23,
+      "gender": "Female",
+      "owner_name": "Alisa",
+      "owner_email": "aberndseng@blog.com"
+    },
+    {
+      "id": 18,
+      "name": "Boubou, southern",
+      "breed": "Laniarius ferrugineus",
+      "age": 9,
+      "gender": "Female",
+      "owner_name": "Bettye",
+      "owner_email": "bbullochh@ft.com"
+    },
+    {
+      "id": 19,
+      "name": "Crab-eating fox",
+      "breed": "Dusicyon thous",
+      "age": 21,
+      "gender": "Male",
+      "owner_name": "Damon",
+      "owner_email": "desbyi@dedecms.com"
+    },
+    {
+      "id": 20,
+      "name": "Heron, black-crowned night",
+      "breed": "Nycticorax nycticorax",
+      "age": 11,
+      "gender": "Female",
+      "owner_name": "Irma",
+      "owner_email": "iverdeyj@elpais.com"
+    },
+    {
+      "id": 21,
+      "name": "Red-tailed hawk",
+      "breed": "Buteo jamaicensis",
+      "age": 18,
+      "gender": "Female",
+      "owner_name": "Ardra",
+      "owner_email": "asothebyk@123-reg.co.uk"
+    },
+    {
+      "id": 22,
+      "name": "Lizard, goanna",
+      "breed": "Varanus sp.",
+      "age": 9,
+      "gender": "Male",
+      "owner_name": "Immanuel",
+      "owner_email": "iwaldenl@bravesites.com"
+    },
+    {
+      "id": 23,
+      "name": "Australian spiny anteater",
+      "breed": "Tachyglossus aculeatus",
+      "age": 21,
+      "gender": "Female",
+      "owner_name": "Flossie",
+      "owner_email": "frenm@vistaprint.com"
+    },
+    {
+      "id": 24,
+      "name": "Sheep, american bighorn",
+      "breed": "Ovis canadensis",
+      "age": 8,
+      "gender": "Male",
+      "owner_name": "El",
+      "owner_email": "ewondraschekn@storify.com"
+    },
+    {
+      "id": 25,
+      "name": "Rattlesnake, eastern diamondback",
+      "breed": "Crotalus adamanteus",
+      "age": 17,
+      "gender": "Male",
+      "owner_name": "Lazaro",
+      "owner_email": "ldekeysero@miitbeian.gov.cn"
+    },
+    {
+      "id": 26,
+      "name": "White-lipped peccary",
+      "breed": "Tayassu pecari",
+      "age": 3,
+      "gender": "Female",
+      "owner_name": "Shay",
+      "owner_email": "sstronghillp@bloglovin.com"
+    },
+    {
+      "id": 27,
+      "name": "Heron, yellow-crowned night",
+      "breed": "Nyctanassa violacea",
+      "age": 15,
+      "gender": "Female",
+      "owner_name": "Yasmin",
+      "owner_email": "yvillarq@sina.com.cn"
+    },
+    {
+      "id": 28,
+      "name": "African pied wagtail",
+      "breed": "Motacilla aguimp",
+      "age": 1,
+      "gender": "Male",
+      "owner_name": "Tonnie",
+      "owner_email": "tbisphamr@clickbank.net"
+    },
+    {
+      "id": 29,
+      "name": "Jaeger, long-tailed",
+      "breed": "Stercorarius longicausus",
+      "age": 4,
+      "gender": "Male",
+      "owner_name": "Hilario",
+      "owner_email": "hcaudrays@aboutads.info"
+    },
+    {
+      "id": 30,
+      "name": "Common mynah",
+      "breed": "Acridotheres tristis",
+      "age": 6,
+      "gender": "Female",
+      "owner_name": "Debra",
+      "owner_email": "dimlacket@godaddy.com"
+    },
+    {
+      "id": 31,
+      "name": "Elephant, african",
+      "breed": "Loxodonta africana",
+      "age": 1,
+      "gender": "Female",
+      "owner_name": "Cornelia",
+      "owner_email": "cruddochu@imgur.com"
+    },
+    {
+      "id": 32,
+      "name": "Baboon, yellow",
+      "breed": "Papio cynocephalus",
+      "age": 18,
+      "gender": "Female",
+      "owner_name": "Marylee",
+      "owner_email": "mkingscottv@godaddy.com"
+    },
+    {
+      "id": 33,
+      "name": "Hawk-eagle, crowned",
+      "breed": "Spizaetus coronatus",
+      "age": 15,
+      "gender": "Male",
+      "owner_name": "Ronny",
+      "owner_email": "rgoodaneww@java.com"
+    },
+    {
+      "id": 34,
+      "name": "Hornbill, red-billed",
+      "breed": "Tockus erythrorhyncus",
+      "age": 16,
+      "gender": "Male",
+      "owner_name": "Leupold",
+      "owner_email": "lprisex@reuters.com"
+    },
+    {
+      "id": 35,
+      "name": "Indian tree pie",
+      "breed": "Dendrocitta vagabunda",
+      "age": 9,
+      "gender": "Female",
+      "owner_name": "Beverly",
+      "owner_email": "bwestwatery@mtv.com"
+    },
+    {
+      "id": 36,
+      "name": "Goldeneye, common",
+      "breed": "Bucephala clangula",
+      "age": 20,
+      "gender": "Male",
+      "owner_name": "Durante",
+      "owner_email": "dreederz@a8.net"
+    },
+    {
+      "id": 37,
+      "name": "Porcupine, crested",
+      "breed": "Hystrix cristata",
+      "age": 2,
+      "gender": "Male",
+      "owner_name": "Lorry",
+      "owner_email": "lstonman10@narod.ru"
+    },
+    {
+      "id": 38,
+      "name": "Savannah deer",
+      "breed": "Mazama gouazoubira",
+      "age": 8,
+      "gender": "Female",
+      "owner_name": "Bird",
+      "owner_email": "bllelweln11@time.com"
+    },
+    {
+      "id": 39,
+      "name": "Civet, common palm",
+      "breed": "Paradoxurus hermaphroditus",
+      "age": 21,
+      "gender": "Female",
+      "owner_name": "Rorie",
+      "owner_email": "rdowers12@diigo.com"
+    },
+    {
+      "id": 40,
+      "name": "Penguin, galapagos",
+      "breed": "Spheniscus mendiculus",
+      "age": 12,
+      "gender": "Male",
+      "owner_name": "Hamil",
+      "owner_email": "hbenmore13@constantcontact.com"
+    },
+    {
+      "id": 41,
+      "name": "Cape raven",
+      "breed": "Corvus albicollis",
+      "age": 10,
+      "gender": "Female",
+      "owner_name": "Rowena",
+      "owner_email": "rmennear14@taobao.com"
+    },
+    {
+      "id": 42,
+      "name": "Egyptian goose",
+      "breed": "Alopochen aegyptiacus",
+      "age": 13,
+      "gender": "Female",
+      "owner_name": "Timothea",
+      "owner_email": "twigley15@sogou.com"
+    },
+    {
+      "id": 43,
+      "name": "Jabiru stork",
+      "breed": "Ephippiorhynchus mycteria",
+      "age": 16,
+      "gender": "Male",
+      "owner_name": "Whittaker",
+      "owner_email": "wdreus16@go.com"
+    },
+    {
+      "id": 44,
+      "name": "African pied wagtail",
+      "breed": "Motacilla aguimp",
+      "age": 19,
+      "gender": "Female",
+      "owner_name": "Phyllys",
+      "owner_email": "pfavel17@uol.com.br"
+    },
+    {
+      "id": 45,
+      "name": "Stork, openbill",
+      "breed": "Anastomus oscitans",
+      "age": 7,
+      "gender": "Female",
+      "owner_name": "Michal",
+      "owner_email": "mmelbury18@nydailynews.com"
+    },
+    {
+      "id": 46,
+      "name": "Land iguana",
+      "breed": "Conolophus subcristatus",
+      "age": 22,
+      "gender": "Male",
+      "owner_name": "Torrance",
+      "owner_email": "tbinney19@desdev.cn"
+    },
+    {
+      "id": 47,
+      "name": "Comb duck",
+      "breed": "Sarkidornis melanotos",
+      "age": 12,
+      "gender": "Male",
+      "owner_name": "Glenn",
+      "owner_email": "gacres1a@noaa.gov"
+    },
+    {
+      "id": 48,
+      "name": "Chameleon (unidentified)",
+      "breed": "Chamaelo sp.",
+      "age": 18,
+      "gender": "Male",
+      "owner_name": "Devlin",
+      "owner_email": "ddallosso1b@wix.com"
+    },
+    {
+      "id": 49,
+      "name": "Lechwe, kafue flats",
+      "breed": "Kobus leche robertsi",
+      "age": 9,
+      "gender": "Male",
+      "owner_name": "Lind",
+      "owner_email": "ljanuaryst1c@jiathis.com"
+    },
+    {
+      "id": 50,
+      "name": "Grey phalarope",
+      "breed": "Phalaropus fulicarius",
+      "age": 1,
+      "gender": "Female",
+      "owner_name": "Karlen",
+      "owner_email": "kdurrance1d@redcross.org"
+    }
+  ]
 }
