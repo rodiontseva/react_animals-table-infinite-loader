@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3004/';
+const BASE_URL = 'https://rodiontseva-pets.herokuapp.com/api/animals/';
 
 type RequestMethod = 'GET' | 'POST';
 
@@ -28,6 +28,5 @@ async function request<T> (
 }
 
 export const client = {
-  get: async <T>(url: string) => await request<T>(url),
   post: async <T>(url: string, data: any) => await request<T>(url, 'POST', data),
 };
