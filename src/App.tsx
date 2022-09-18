@@ -3,7 +3,7 @@ import Add from '@mui/icons-material/Add';
 import React, { FC, useState } from 'react';
 import './App.css';
 import { PetsForm } from './components/PetsForm';
-import { PetsTable } from './components/PetsTable';
+import { PetsTable } from './components/PetsTable/PetsTable';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';

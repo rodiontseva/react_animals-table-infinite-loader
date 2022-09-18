@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/restrict-template-expressions */
 import React, { FC, useCallback, useRef, useState } from 'react'
 import { AgGridReact } from 'ag-grid-react';
@@ -6,7 +7,7 @@ import 'ag-grid-community/dist/styles/ag-theme-balham.css';
 import './PetsTable.css'
 
 export const PetsTable: FC = () => {
-  const gridRef = useRef();
+  const gridRef = useRef<any>();
   const [gridApi, setGridApi] = useState(null);
   const columns = [
     { headerName: 'Pet name', field: 'name', width: 150, suppressSizeToFit: true, cellRenderer: 'loading' },
@@ -18,7 +19,7 @@ export const PetsTable: FC = () => {
   ];
 
   const datasource = {
-    getRows (params) {
+    getRows (params: { successCallback?: any; failCallback?: any; startRow?: any; endRow?: any; sortModel?: any; }) {
       console.log(JSON.stringify(params, null, 1));
       const { startRow, endRow, sortModel } = params;
 
@@ -48,15 +49,14 @@ export const PetsTable: FC = () => {
     });
   }, []);
 
-  const onGridReady = (params) => {
+  const onGridReady = (params: React.SetStateAction<any>) => {
     setGridApi(params);
     params.api.setDatasource(datasource);
     sizeToFit();
   }
 
   const components = {
-    loading: (params) => {
-      console.log(params.value);
+    loading: (params: { value: undefined; }) => {
       if (params.value !== undefined) {
         return params.value
       } else {

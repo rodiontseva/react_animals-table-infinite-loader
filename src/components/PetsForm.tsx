@@ -128,7 +128,7 @@ export const PetsForm: FC<Props> = (props) => {
               id='mySelect'
               onChange={event => setPetGender(event.target.value as Gender)}
               required
-              defaultValue={Gender.Male}
+              defaultValue={Gender.Female}
             >
               {Object.values(Gender).map(gender => (
                 <MenuItem value={gender} key={gender}>{gender}</MenuItem>
