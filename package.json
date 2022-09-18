@@ -6,6 +6,9 @@
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
+    "@fontsource/roboto": "^4.5.8",
+    "@material-ui/core": "^4.12.4",
+    "@mui/icons-material": "^5.10.3",
     "@mui/material": "^5.10.5",
     "@mui/x-data-grid": "^5.17.3",
     "@mui/x-data-grid-generator": "^5.17.2",
@@ -13,6 +16,8 @@
     "@types/node": "^16.11.59",
     "@types/react": "^18.0.20",
     "@types/react-dom": "^18.0.6",
+    "ag-grid-community": "^28.1.1",
+    "ag-grid-react": "^28.1.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",

@@ -24,6 +24,7 @@ module.exports = {
     semi: 'off',
     '@typescript-eslint/semi': 'warn',
     '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/member-delimiter-style': 'warn'
+    '@typescript-eslint/member-delimiter-style': 'warn',
+    '@typescript-eslint/restrict-template-expressions': 'error'
   },
 };

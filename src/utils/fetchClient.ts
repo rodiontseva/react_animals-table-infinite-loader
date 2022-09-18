@@ -20,7 +20,7 @@ async function request<T> (
   return await fetch(BASE_URL + url, options)
     .then(async response => {
       if (!response.ok) {
-        throw new Error('Unable to display pets list');
+        throw new Error();
       }
 
       return await response.json();

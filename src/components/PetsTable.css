@@ -1,0 +1,11 @@
+.ag-theme-balham {
+  --ag-foreground-color: #455a64;
+  --ag-background-color: #eceff1;
+  --ag-header-foreground-color: #eceff1;
+  --ag-header-background-color: #37474f;
+  --ag-odd-row-background-color: #eceff1;
+  --ag-header-column-resize-handle-color: #9575cd;
+
+  --ag-font-size: 20px;
+  --ag-font-family: roboto;
+}

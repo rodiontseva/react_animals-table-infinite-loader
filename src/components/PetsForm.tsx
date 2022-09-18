@@ -1,14 +1,17 @@
 import React, { FC, SetStateAction, useState, Dispatch, FormEvent } from 'react';
 import { createPet } from '../api/pets';
 import { Gender } from '../types/Gender';
-import { CreatePetFragment, Pet } from '../types/Pet';
+import { CreatePetFragment } from '../types/Pet';
+import { Button, FormControl, Grid, InputLabel, MenuItem, Select } from '@mui/material';
+import TextField from '@mui/material/TextField';
 
 interface Props {
-  setPets: Dispatch<SetStateAction<Pet[]>>,
+  setIsUpdateTable: Dispatch<SetStateAction<boolean>>,
+  setOpen: Dispatch<SetStateAction<boolean>>,
 }
 
 export const PetsForm: FC<Props> = (props) => {
-  const { setPets } = props;
+  const { setIsUpdateTable, setOpen } = props;
   const [petName, setPetName] = useState<string>('');
   const [petBreed, setPetBreed] = useState<string | null>(null);
   const [petAge, setPetAge] = useState<number | null>(null);
@@ -29,15 +32,12 @@ export const PetsForm: FC<Props> = (props) => {
     setPetAge(null);
     setPetGender(Gender.Female);
     setPetOwnerName('');
-    setPetOwnerEmail('')
-  };
-
-  const onAdd = (newPet: Pet) => {
-    setPets((prevPets) => [...prevPets, newPet]);
+    setPetOwnerEmail('');
   };
 
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
+    setIsUpdateTable(false);
 
     const createdPet: CreatePetFragment = {
       name: petName,
@@ -49,12 +49,13 @@ export const PetsForm: FC<Props> = (props) => {
     };
 
     createPet(createdPet)
-      .then(onAdd)
       .catch(() => {
         throw new Error('Unable to add a pet');
       })
       .finally(() => {
         clearForm();
+        setIsUpdateTable(true);
+        setOpen(false);
       });
   };
 
@@ -70,76 +71,110 @@ export const PetsForm: FC<Props> = (props) => {
     <form
       onSubmit={handleSubmit}
     >
-      <h2>Add a pet</h2>
+      <Grid
+        container
+        direction='column'
+        columns={1}
+      >
+        <Grid item>
+          <FormControl sx={{ m: 1, minWidth: 120 }}>
+            <TextField
+              name="petName"
+              label="Pet name"
+              variant="outlined"
+              size="small"
+              value={petName}
+              onChange={event => setPetName((event.target.value).trim())}
+              required
+            />
+          </FormControl>
+        </Grid>
 
-      <input
-        name="petName"
-        placeholder="Pet name"
-        value={petName}
-        onChange={event => setPetName((event.target.value).trim())}
-        required
-      />
+        <Grid item>
+          <FormControl sx={{ m: 1, minWidth: 120 }}>
+            <TextField
+              name="petBreed"
+              label="Breed"
+              variant="outlined"
+              size="small"
+              value={petBreed ?? ''}
+              onChange={event => setPetBreed(event.target.value)}
+            />
+          </FormControl>
+        </Grid>
 
-      <input
-        name="petBreed"
-        placeholder="Breed"
-        value={petBreed ?? ''}
-        onChange={event => setPetBreed(event.target.value)}
-      />
+        <Grid item>
+          <FormControl sx={{ m: 1, minWidth: 120 }}>
+            <TextField
+              name="petAge"
+              type="number"
+              InputProps={{ inputProps: { min: 0, max: 30 } }}
+              label="Age"
+              variant="outlined"
+              size="small"
+              value={petAge ?? ''}
+              onChange={event => setPetAge(Number(event.target.value))}
+            />
+          </FormControl>
+        </Grid>
 
-      <input
-        name="petAge"
-        placeholder="Age"
-        type="number"
-        min="1"
-        max="30"
-        value={petAge ?? ''}
-        onChange={event => setPetAge(Number(event.target.value))}
-      />
+        <Grid item>
+          <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+            <InputLabel id="gender">Good boy or girl?</InputLabel>
+            <Select
+              name="petGender"
+              labelId="gender"
+              label="Good boy or girl?"
+              id='mySelect'
+              onChange={event => setPetGender(event.target.value as Gender)}
+              required
+              defaultValue={Gender.Male}
+            >
+              {Object.values(Gender).map(gender => (
+                <MenuItem value={gender} key={gender}>{gender}</MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+        </Grid>
 
-      <label>
-        Good boy or good girl?:
-        <select
-          id='mySelect'
-          name="petGender"
-          onChange={event => setPetGender(event.target.value as Gender)}
-          required
-          defaultValue={Gender.Female}
-        >
-          {Object.values(Gender).map(gender => (
-            <option value={gender} key={gender}>{gender}</option>
-          ))}
-        </select>
-      </label>
+        <Grid item>
+          <FormControl sx={{ m: 1, minWidth: 120 }}>
+            <TextField
+              name="petOwnerName"
+              label="Your name"
+              variant="outlined"
+              size="small"
+              value={petOwnerName}
+              onChange={event => setPetOwnerName((event.target.value).trim())}
+              required
+            />
+          </FormControl>
+        </Grid>
 
-      <input
-        name="petOwnerName"
-        placeholder="Your name"
-        value={petOwnerName}
-        onChange={event => setPetOwnerName((event.target.value).trim())}
-        required
-      />
+        <Grid item>
+          <FormControl sx={{ m: 1, marginBottom: 5, minWidth: 120 }}>
+            <TextField
+              name="petOwnerEmail"
+              label="email@example.com"
+              variant="outlined"
+              size="small"
+              type="email"
+              value={petOwnerEmail}
+              onChange={event => setPetOwnerEmail(event.target.value)}
+              required
+            />
+          </FormControl>
+        </Grid>
+      </Grid>
 
-      <input
-        name="petOwnerEmail"
-        placeholder="email@example.com"
-        type="email"
-        value={petOwnerEmail}
-        onChange={event => setPetOwnerEmail(event.target.value)}
-        required
-      />
-
-      <div className="field is-grouped">
-        <div className="control">
-          <button
-            type="submit"
-            disabled={isDisableSubmitButton()}
-          >
-            Add
-          </button>
-        </div>
-      </div>
+      <Button
+        type="submit"
+        disabled={isDisableSubmitButton()}
+        variant="outlined"
+        color="secondary"
+      >
+        Add
+      </Button>
     </form>
-
   );
 }
